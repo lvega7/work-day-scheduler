@@ -6,38 +6,37 @@ var saveBtn= document.querySelector(".saveBtn")
 var day = moment ().format('dddd, MMMM Do');
 date.textContent= (day)
 
-// color codes
+
+
+
+
+
 var colorTime = function(){
-    var time = new Date().getHours();
+var now = new Date();
+var hours = now.getHours();
 
-if(time<10){
+var ft = now.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true
+});
+
+if (5 <= hours && hours < 8) {//Morning
     $(block).addClass ('.present');
-}
-
-
-    // if(day === (".hour"){
-    //     $(block).addClass ('.present');
-    // }
-}
+    
+}}
 
 
 
-// save description
-var saveBlock = function(){
-    var text = localStorage.getItem('textarea');
-   
+
+// save block text 
+block.value=localStorage.getItem("notes")
 
 
-};
-
-saveBtn.addEventListener("click", function ( ) {
-
-    var text = document.querySelector('textarea').value;
-
-    localStorage.setItem('text', text);
-    saveBlock();
-
+saveBtn.addEventListener("click", event=> {
+    localStorage.setItem("notes", block.value)
 })
+
 
 
 
