@@ -4,3 +4,4 @@ For this project I created a work day scheduler. This website can let you write 
 
 Link to page: https://lvega7.github.io/work-day-scheduler/
 
+![screenshot](https://user-images.githubusercontent.com/88006211/134841348-89eb9bfd-6afd-4837-a1b1-ac5295126ffb.png)
